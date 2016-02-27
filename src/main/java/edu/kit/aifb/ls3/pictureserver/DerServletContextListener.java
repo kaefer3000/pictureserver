@@ -56,7 +56,7 @@ public class DerServletContextListener implements ServletContextListener {
 			g.drawImage(_image, 0, 0, null);
 		}
 
-		public synchronized boolean render(InputStream is) throws IOException {
+		public  boolean render(InputStream is) throws IOException {
 			BufferedImage bi = ImageIO.read(is);
 
 			if (bi == null)
